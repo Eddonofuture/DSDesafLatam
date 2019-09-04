@@ -1,0 +1,118 @@
+# Rúbrica Prueba Final - Machine Learning
+​
+El objetivo de la evaluación final del módulo es implementar los contenidos aprendidos a lo largo de las ocho semanas para resolver dos problemas de carácter obligatorio.
+​
+## Consideraciones Generales
+​
+La prueba debe desarrollarse en consideración a los siguientes puntos:
+​
+​
+- Una sección llamada __Preliminares__ donde se realiza la descripción del problema y objetivos, así como explicar cómo implementarán su solución. Debe considerar qué criterios de optimización y métricas de desempeño.
+- Una sección llamada __Aspectos computacionales__ donde se describirán las librerías y módulos a implementar, así como las funciones generadas y su objetivo.
+- Una sección llamada __Análisis Exploratorio__ donde se generará un análisis descriptivo considerando el tipo de variables (desde el punto de vista estadístico así como computacional). Esta sección debe considerar medidas univariadas/ frecuencias, datos perdidos y gráficos distributivos sobre las variables a analizar. A partir de ésta se debe clarificar la estrategia de preprocesamiento (datos perdidos, recodificaciones).
+* Una sección llamada __Feature Engineering__ donde se declarará todas las recodificaciones y transformaciones a realizar.
+- Una sección llamada __Modelación__, donde se implementará una solución analítica que aumente las métricas de desempeño. Se solicitan por lo menos 5 modelos predictivos. Cada modelo predictivo debe tener una reseña sobre el por qué se diseño de esa forma.
+​
+​
+### Puntuación y corrección
+​
+* Cada hito equivaldrá a 5 puntos de un total de 20.
+* Para aprobar, se requiere un puntaje igual o superior a 16 puntos.
+​
+​
+​
+### Hito 1: Sesión 11
+​
+* Al final de la sesión, el alumno (o pareja) debe completar el punto de __Preliminares__, así como __Aspectos computacionales__.
+​
+* Elementos comunes a considerar en éste hito:
+  * Los dos enunciados deben estar clarificados, considerando el tipo de problema a resolver. Para cada uno de los enunciados se deben considerar las librerías a implementar. (1 punto)
+  * El tipo de métricas a implementar, Qué estrategia de división de muestras, Qué tipo de preprocesamiento se implementará. (2 puntos)
+  * Para cada enunciado, se deben declarar por lo menos cinco modelos con una grilla de hiperparámetros tentativa. (2 puntos)
+​
+* __Entregable:__ Dos notebooks (uno por enunciado) con todos los puntos detallados.
+​
+### Hito 2: Sesión 12
+​
+* Al final de la sesión, el alumno (o pareja) debe completar el punto de __Análisis Exploratorio__ e iniciar el proceso de __Feature engineering__.
+​
+* Elementos comunes a considerar en éste hito:
+  * Se debe analizar el comportamiento del vector objetivo. (2 puntos)
+  * Se debe reportar el patrón de datos perdidos. (1 punto)
+  * Se debe implementar recodificaciones para el vector objetivo. (2 puntos)
+​
+* __Específicos prueba 1:__
+  * Considerar el uso de algún preprocesador de texto (`CountVectorizer`, `TfidfVectorizer`) y definición de sus parámetros.
+  * Considerar la recodificación del vector objetivo y su estrategia de aleatorización.
+* __Específicos prueba 2:__
+  * Definir el tipo de modelo a implementar para generar una predicción de arresto, así como su grilla de hiperparámetros.
+  * Definir la recodificación del vector objetivo para generar una predicción de acción violenta en el procedimiento.
+  * Implementar el script `preproc_nyc_sqf.py` para igualar la cantidad de atributos en el benchmark.
+​
+* __Entregable:__ Dos notebooks (uno por enunciado) con todos los puntos detallados. De ser necesario, un archivo con extensión `.py` que contenga todas las funciones auxiliares.
+​
+​
+​
+### Hito 3: Sesión 13
+​
+* Al final de la sesión, el alumno (o pareja) debe completar el punto de __Feature engineering__.
+​
+* Elementos comunes a considerar en éste hito:
+  * Se debe analizar el comportamiento del vector objetivo. (2 puntos)
+  * Se debe reportar el patrón de datos perdidos. (1 punto)
+  * Se debe implementar recodificaciones para el vector objetivo. (2 puntos)
+​
+* __Específicos prueba 1:__
+  * Se deben completar los puntos pendientes.
+* __Específicos prueba 2:__
+  * Se deben completar los puntos pendientes.
+​
+* __Entregable:__ Dos notebooks (uno por enunciado) con todos los puntos detallados. De ser necesario, un archivo con extensión `.py` que contenga todas las funciones auxiliares.
+​
+### Hito 4: Sesión 14
+​
+* Al final de la sesión, el alumno (o pareja) debe presentar una primera iteración de la __Modelación__
+​
+* Elementos comunes a considerar en éste hito:
+  * Las grillas de hiperparámetros para cada uno de los cinco modelos propuestos deben estar declaradas. (3 puntos )
+  * Generar la búsqueda de grilla de por lo menos dos modelos, preservando la información en un archivo serializado. (2 puntos)
+​
+* __Específicos prueba 1:__
+  * La prueba 1 no contiene específicos.
+* __Específicos prueba 2:__
+  * Se debe presentar una solución a alguno de los siguientes puntos:
+    * Modelación de la predicción de arrestos.
+    * Modelación de la predicción de evento violento.
+​
+* __Entregable:__ Dos notebooks (uno por enunciado) con todos los puntos detallados. De ser necesario, un archivo con extensión `.py` que contenga todas las funciones auxiliares.
+​
+### Hito 5: Sesión 15
+​
+* Al final de la sesión, el alumno (o pareja) debe presentar una segunda iteración de la __Modelación__.
+​
+* Elementos comunes a considerar en éste hito:
+  * Se debe entrenar el resto de los modelos declarados mediante la búsqueda de grilla. (5 Puntos)
+  * De ser necesario, se podrá reespecificar los componentes de la grilla.
+​
+* __Específicos prueba 1:__
+  * La prueba 1 no contiene específicos.
+* __Específicos prueba 2:__
+  * Se debe presentar una solución al problema restante no abordado en el hito 4.
+​
+* __Entregable:__ Dos notebooks (uno por enunciado) con todos los puntos detallados. De ser necesario, un archivo con extensión `.py` que contenga todas las funciones auxiliares.
+​
+### Hito 6: Sesión 16
+​
+* Al final de la sesión, el alumno (o pareja) debe presentar una tercera iteración de la __Modelación__.
+​
+* Elementos comunes a considerar en éste hito:
+  * Se debe generar un reporte comparativo del desempeño de los modelos. (2 puntos)
+  * Se debe reportar cuáles son los dos mejores modelos en su desempeño. (2 puntos)
+  * Se deben enviar los dos mejores modelos, en archivos serializados. (1 punto)
+​
+* __Específicos prueba 1:__
+  * La prueba 1 no contiene específicos.
+* __Específicos prueba 2:__
+  * La prueba 2 no contiene específicos.
+​
+* __Entregable:__ Dos notebooks (uno por enunciado) con todos los puntos detallados. De ser necesario, un archivo con extensión `.py` que contenga todas las funciones auxiliares.
