@@ -62,3 +62,20 @@ def print_df(df):
             plt.xlabel("")
             plt.tight_layout()
     return
+
+def roc_graphic(y_test, y_hat):
+    import matplotlib.pyplot as plt
+    from sklearn.metrics import roc_curve
+    '''
+    Plot Curva ROC
+    -> Input
+    y_test , y_hat
+    -> Output
+    Plot
+    '''
+    false_positive , true_positive , threshold = roc_curve(y_test,y_hat[:,1])
+    plt.plot(false_positive,true_positive,lw = 1)
+    plt.plot([0,1], linestyle='--', lw=1, color='tomato')
+    plt.ylabel('Verdaderos Positivos')
+    plt.xlabel('Falsos Positivos')
+    return
